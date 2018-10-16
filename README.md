@@ -9,8 +9,9 @@ react-native hybrid develop
 
 ### react native 交互
 [iOS原生和React-Native之间的交互](http://www.cnblogs.com/shaoting/p/6392390.html)
-
+* 1 <http://www.cnblogs.com/shaoting/p/6392390.html>
+* 2 <https://www.cnblogs.com/shaoting/p/6491978.html>
 #### react native 官网（英文）
 <https://facebook.github.io/react-native/docs/getting-started.html>
-#### react native 官网（中文）
+#### react native（中文）
 <https://reactnative.cn>
