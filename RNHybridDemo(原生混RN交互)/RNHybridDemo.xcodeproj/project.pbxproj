@@ -18,6 +18,9 @@
 		0EA6C36421759BA500590545 /* RNHybridDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6C36321759BA500590545 /* RNHybridDemoUITests.m */; };
 		0EA6C3732175B26600590545 /* BaseRNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6C3722175B26600590545 /* BaseRNViewController.m */; };
 		0EA6C3822175CE6200590545 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6C3812175CE6200590545 /* CalendarManager.m */; };
+		0EA6C39B2177072600590545 /* NativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6C39A2177072600590545 /* NativeViewController.m */; };
+		0EA6C39E217707E600590545 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6C39D217707E600590545 /* BaseViewController.m */; };
+		0EA6C3A121770D3D00590545 /* RNJumperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6C3A021770D3D00590545 /* RNJumperManager.m */; };
 		998992C916C46315819EF019 /* Pods_RNHybridDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38771CB0B90D48B4BD038DE3 /* Pods_RNHybridDemo.framework */; };
 		ABDA2698DE1BF24178471C3C /* Pods_RNHybridDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C378A11483B3E4DEB9A9C4 /* Pods_RNHybridDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +63,12 @@
 		0EA6C3722175B26600590545 /* BaseRNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRNViewController.m; sourceTree = "<group>"; };
 		0EA6C3802175CE6200590545 /* CalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
 		0EA6C3812175CE6200590545 /* CalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
+		0EA6C3992177072600590545 /* NativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeViewController.h; sourceTree = "<group>"; };
+		0EA6C39A2177072600590545 /* NativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeViewController.m; sourceTree = "<group>"; };
+		0EA6C39C217707E600590545 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0EA6C39D217707E600590545 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0EA6C39F21770D3D00590545 /* RNJumperManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNJumperManager.h; sourceTree = "<group>"; };
+		0EA6C3A021770D3D00590545 /* RNJumperManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNJumperManager.m; sourceTree = "<group>"; };
 		102E2A4C6285FDFD042276AB /* Pods_RNHybridDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNHybridDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B173012FDFDCB2361D41C3B /* Pods-RNHybridDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNHybridDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNHybridDemoTests/Pods-RNHybridDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		21C378A11483B3E4DEB9A9C4 /* Pods_RNHybridDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNHybridDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,10 +137,16 @@
 				0EA6C34021759BA400590545 /* AppDelegate.m */,
 				0EA6C34221759BA400590545 /* ViewController.h */,
 				0EA6C34321759BA400590545 /* ViewController.m */,
+				0EA6C39C217707E600590545 /* BaseViewController.h */,
+				0EA6C39D217707E600590545 /* BaseViewController.m */,
 				0EA6C3712175B26600590545 /* BaseRNViewController.h */,
 				0EA6C3722175B26600590545 /* BaseRNViewController.m */,
 				0EA6C3802175CE6200590545 /* CalendarManager.h */,
 				0EA6C3812175CE6200590545 /* CalendarManager.m */,
+				0EA6C39F21770D3D00590545 /* RNJumperManager.h */,
+				0EA6C3A021770D3D00590545 /* RNJumperManager.m */,
+				0EA6C3992177072600590545 /* NativeViewController.h */,
+				0EA6C39A2177072600590545 /* NativeViewController.m */,
 				0EA6C34521759BA400590545 /* Main.storyboard */,
 				0EA6C34821759BA500590545 /* Assets.xcassets */,
 				0EA6C34A21759BA500590545 /* LaunchScreen.storyboard */,
@@ -517,9 +532,12 @@
 			files = (
 				0EA6C3822175CE6200590545 /* CalendarManager.m in Sources */,
 				0EA6C34421759BA400590545 /* ViewController.m in Sources */,
+				0EA6C3A121770D3D00590545 /* RNJumperManager.m in Sources */,
 				0EA6C34F21759BA500590545 /* main.m in Sources */,
 				0EA6C34121759BA400590545 /* AppDelegate.m in Sources */,
 				0EA6C3732175B26600590545 /* BaseRNViewController.m in Sources */,
+				0EA6C39E217707E600590545 /* BaseViewController.m in Sources */,
+				0EA6C39B2177072600590545 /* NativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

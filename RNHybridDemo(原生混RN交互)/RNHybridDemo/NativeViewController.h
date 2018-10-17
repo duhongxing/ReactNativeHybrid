@@ -1,8 +1,8 @@
 //
-//  BaseRNViewController.h
+//  NativeViewController.h
 //  RNHybridDemo
 //
-//  Created by duhx on 2018/10/16.
+//  Created by duhx on 2018/10/17.
 //  Copyright © 2018年 58daojia. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseRNViewController : BaseViewController
+@interface NativeViewController : BaseViewController
 
 @end
 

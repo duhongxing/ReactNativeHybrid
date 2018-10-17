@@ -25,7 +25,6 @@ static NSString *strUrl = @"http://localhost:8081/index-ios.bundle?platform=ios&
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings]jsBundleURLForBundleRoot:@"index-ios" fallbackResource:nil];
     RCTRootView *rootView = [[RCTRootView alloc]initWithBundleURL:jsCodeLocation moduleName:@"NativeAddRN" initialProperties:nil launchOptions:nil];
     self.view = rootView;
-    
    
 }
 

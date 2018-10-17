@@ -49,9 +49,25 @@ RCT_REMAP_METHOD(testCallbackEventTwo, resolver:(RCTPromiseResolveBlock)resolve
     }
 }
 
+//清理缓存
+RCT_EXPORT_METHOD(cleanCache:(RCTResponseSenderBlock)callback){
+    NSURLCache *httpCache = [NSURLCache sharedURLCache];
+    [httpCache removeAllCachedResponses];
+    NSUInteger cache = [httpCache currentDiskUsage];
+    callback(@[[NSNull null],@(cache)]);
+}
+
+// 计算缓存
+RCT_EXPORT_METHOD(cacheSize:(RCTResponseSenderBlock)callback)
+{
+    NSURLCache *httpCache = [NSURLCache sharedURLCache];
+    NSUInteger cache = [httpCache currentDiskUsage];
+    callback(@[[NSNull null],@(cache)]);
+}
+
 - (NSDictionary *)constantsToExport
 {
-    return @{ @"ValueOne": @"我是从原生定义的~" };
+    return @{ @"ValueOne": @"RN使用原生定义的常量" };
 }
 
 - (void)showAlertWithText:(NSString *)text {
